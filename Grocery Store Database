@@ -1,0 +1,29 @@
+-- Create a grocery store database
+
+CREATE TABLE items (id INTEGER PRIMARY KEY, name TEXT, price REAL, sold_last_month INTEGER, customer_rating INTEGER);
+
+INSERT INTO items Values
+(1, "bread", 3.49, 257, 4.7),
+(2, "milk", 2.99, 348, 4.3),
+(3, "eggs", 3.99, 200, 3.9),
+(4, "peanutbutter", 4.49, 309, 4.8),
+(5, "jelly", 3.20, 234, 4.4),
+(6, "bananas", 4.32, 432, 3.3),
+(7, "steak", 12.41, 145, 4.0),
+(8, "baby formula", 15.45, 69, 4.9),
+(9, "chicken breasts", 7.98, 422, 4.2),
+(10, "chocolate", 2.00, 355, 5.0),
+(11, "yogurt", 1.50, 456, 3.2),
+(12, "granola bars", 3.45, 523, 4.0),
+(13, "apples", 2.99, 432, 4.3),
+(14, "cheese", 3.45, 423, 4.1),
+(15, "spaghetti", 3.68, 234, 3.9);
+
+-- Display the database ordered by price.
+SELECT * FROM items ORDER BY price;
+
+-- What is the average customer rating of the store items>
+SELECT avg(customer_rating) FROM items;
+
+-- What 5 items sold the best last month?
+SELECT item, sold_last_month FROM items order by sold_last_month desc limit 5;
