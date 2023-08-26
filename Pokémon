@@ -1,4 +1,4 @@
--- The table below can be found at https://gist.github.com/pamelafox/26b9357c6120d3d0d27c2b90c950e8c6. My Code can be found starting at line 820.
+-- The database below can be found at https://gist.github.com/pamelafox/26b9357c6120d3d0d27c2b90c950e8c6. My Code can be found starting at line 820.
 
 
 CREATE TABLE pokemon(
